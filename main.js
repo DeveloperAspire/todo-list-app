@@ -6,6 +6,8 @@ const taskSection = document.querySelector('#tasksection');
 const taskList = document.querySelector('#tasklist');
 
 // FUNCTIONS
+
+// THIS FUNCTION ADDS TASK AND ALSO VALIDATION
 function addElement(){
 
     // THIS CREATES THE LIST OF TASK
