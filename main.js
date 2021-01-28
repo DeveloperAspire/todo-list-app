@@ -5,9 +5,8 @@ const inputContainer = document.querySelector('#input-con');
 const taskSection = document.querySelector('#tasksection');
 const taskList = document.querySelector('#tasklist');
 
+
 // FUNCTIONS
-
-
 
 // THIS FUNCTION ADDS TASK, VALIDATE INPUT AND ALSO DELETE IT
 function addElement(){
@@ -64,16 +63,17 @@ function addElement(){
 
 
     // CLEAR INPUT
+
     setTimeout(function clearInput(){
         input.value=""
     }, 500)
 
     // IF DELETE ICON  IS CLICKED
-
+    
     icon.addEventListener('click', removetaskList);
 
     // THIS FUNCTION ACTS FOR REMOVING TASK
-    
+
   function removetaskList(e) {
 
 taskSection.removeChild(childList)
