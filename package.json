@@ -1,0 +1,12 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "An App to create and manage task you want to achieve per day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
