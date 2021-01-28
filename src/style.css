@@ -678,6 +678,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgba(196, 181, 253, var(--tw-border-opacity));
   border-bottom-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem
 }
