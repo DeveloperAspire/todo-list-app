@@ -52,9 +52,6 @@ function addElement(){
         
         taskSection.removeChild(childList)
 
-        if(!taskList){
-            taskSection.classList.add('hidden')
-        }
 
         setTimeout(function removeBorder(){
             input.classList.remove('border','border-red-400')
@@ -78,9 +75,6 @@ function addElement(){
 
 taskSection.removeChild(childList)
 
-//if(!taskList){
-  //  taskSection.classList.add('hidden')
-//}
 
   }
 
