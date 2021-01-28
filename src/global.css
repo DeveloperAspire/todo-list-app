@@ -4,7 +4,7 @@
 
 @layer components {
     .btn{
- @apply inline-block p-2 w-12 h-12 ml-1 rounded-full bg-purple-500 text-center text-white  focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-purple-500
+ @apply inline-block p-2 w-12 h-12 ml-1 rounded-full bg-purple-500 text-center text-white focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-purple-500
 }
 .input{
     @apply p-2 md:p-4 rounded text-center focus:outline-none focus:ring focus:border-purple-400
