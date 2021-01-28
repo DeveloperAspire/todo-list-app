@@ -7,7 +7,9 @@ const taskList = document.querySelector('#tasklist');
 
 // FUNCTIONS
 
-// THIS FUNCTION ADDS TASK AND ALSO VALIDATION
+
+
+// THIS FUNCTION ADDS TASK, VALIDATE INPUT AND ALSO DELETE IT
 function addElement(){
 
     // THIS CREATES THE LIST OF TASK
@@ -48,7 +50,12 @@ function addElement(){
     // VALIDATION
     if(input.value== ""){
         input.classList.add('border','border-red-400')
+        
         taskSection.removeChild(childList)
+
+        if(!taskList){
+            taskSection.classList.add('hidden')
+        }
 
         setTimeout(function removeBorder(){
             input.classList.remove('border','border-red-400')
@@ -60,7 +67,31 @@ function addElement(){
     setTimeout(function clearInput(){
         input.value=""
     }, 500)
+
+    // IF DELETE ICON  IS CLICKED
+
+    icon.addEventListener('click', removetaskList);
+
+    // THIS FUNCTION ACTS FOR REMOVING TASK
+    
+  function removetaskList(e) {
+
+taskSection.removeChild(childList)
+
+if(!taskList){
+    taskSection.classList.add('hidden')
 }
+
+  }
+
+}
+
+
+
+
+
+
+
 
 
 // ADD EVENT LISTENERS
