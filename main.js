@@ -69,7 +69,7 @@ function addElement(){
     }, 500)
 
     // IF DELETE ICON  IS CLICKED
-    
+
     icon.addEventListener('click', removetaskList);
 
     // THIS FUNCTION ACTS FOR REMOVING TASK
@@ -78,9 +78,9 @@ function addElement(){
 
 taskSection.removeChild(childList)
 
-if(!taskList){
-    taskSection.classList.add('hidden')
-}
+//if(!taskList){
+  //  taskSection.classList.add('hidden')
+//}
 
   }
 
