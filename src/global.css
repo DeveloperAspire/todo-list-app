@@ -10,6 +10,6 @@
     @apply p-2 md:p-4 rounded text-center focus:outline-none focus:ring focus:border-purple-400
 }
 .check{
-    @apply border-b-2 border-purple-300 py-2 md:text-lg
+    @apply border-b-2 border-purple-300 py-2 md:text-lg flex justify-between items-center
 }
 }
