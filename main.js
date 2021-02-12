@@ -29,7 +29,7 @@ function showTasks(){
 
     // CREATED INPUT AND SET VALUE
     const checkedItem = document.createElement('input');
-    checkedItem.setAtteribute("type", "checkbox");
+    checkedItem.setAttribute("type", "checkbox");
   
     // CREATED SPAN AND IT TEXT
     const span = document.createElement('span')
