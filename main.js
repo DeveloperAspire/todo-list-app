@@ -45,20 +45,7 @@ function addElement(){
     taskSection.classList.remove('hidden')
     taskSection.appendChild(childList)
 
-
-
-    // VALIDATION
-    if(input.value== ""){
-        input.classList.add('border','border-red-400')
-        
-        taskSection.removeChild(childList)
-
-
-        setTimeout(function removeBorder(){
-            input.classList.remove('border','border-red-400')
-        },700)
-    }
-
+     checkValidation(input.value, childList)
 
     // CLEAR INPUT
 
@@ -74,13 +61,29 @@ function addElement(){
 
   function removetaskList(e) {
 
-taskSection.removeChild(childList)
+ taskSection.removeChild(childList)
 
 
   }
 
 
 
+
+}
+
+// VALIDATION
+
+function checkValidation(inputData, childList){
+  if(inputData == ""){
+    input.classList.add('border','border-red-400')
+    
+    taskSection.removeChild(childList)
+
+
+    setTimeout(function removeBorder(){
+        input.classList.remove('border','border-red-400')
+    },700)
+}
 
 }
 
@@ -100,7 +103,7 @@ function loadEventListener() {
   
 
 button.addEventListener('click',addElement)
-taskSection.addEventListener('click', deleteTask)
+ taskSection.addEventListener('click', deleteTask)
 
 
 }
