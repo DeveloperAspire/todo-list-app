@@ -647,6 +647,8 @@ video {
 
 .input {
   border-radius: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .input:focus {
