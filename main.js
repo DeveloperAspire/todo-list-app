@@ -6,7 +6,7 @@ const taskSection = document.querySelector('#tasksection');
 const taskList = document.querySelector('#tasklist');
 
 
-// FUNCTIONS
+
 
 // THIS FUNCTION ADDS TASK, VALIDATE INPUT AND ALSO DELETE IT
 function addElement(){
@@ -28,6 +28,7 @@ function addElement(){
     span.classList.add('ml-2')
     span.textContent= input.value;
 
+
     // APPEND VALUE TO DIV
     checkedDiv.appendChild(checkedItem)
     checkedDiv.appendChild(span)
@@ -40,10 +41,10 @@ function addElement(){
     childList.appendChild(checkedDiv);
     childList.appendChild(icon);
 
-
     // RENDER TO HTML PAGE
     taskSection.classList.remove('hidden')
-    taskSection.appendChild(childList);
+    taskSection.appendChild(childList)
+
 
 
     // VALIDATION
@@ -91,7 +92,16 @@ taskSection.removeChild(childList)
 
 
 
-// ADD EVENT LISTENERS
+// EVENT LISTENERS LOAD
 
-button.addEventListener('click', addElement);
+loadEventListener()
+
+function loadEventListener() {
+  
+
+button.addEventListener('click',addElement)
+taskSection.addEventListener('click', deleteTask)
+
+
+}
 
